@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -47,6 +47,77 @@
                 <select id="playlist" name="playlist" required disabled>
                     <option value="" disabled selected>Select a Channel First</option>
                 </select>
+            </div>
+            <div class="form-group">
+                <label for="Visibility?">Visibility?</label>
+                <select id="Visibility?" name="Visibility?" required>
+                    <option value="Private">Private</option>
+                    <option value="Public">Public</option>
+                    <option value="Unlisted">Unlisted</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Thumbnail Link">Thumbnail Link:</label>
+                <input type="text" id="Thumbnail Link" name="Thumbnail Link" placeholder="Google Drive Link">
+            </div>
+            <button type="submit" id="submit-btn">Schedule Live</button>
+        </form>
+        <div id="response-message"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Live Broadcast Scheduler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Schedule a Live Broadcast</h1>
+        <form id="live-broadcast-form">
+            <div class="form-group">
+                <label for="channel">Select a Channel:</label>
+                <select id="channel" name="channel" required>
+                    <option value="" disabled selected>Select a Channel</option>
+                    <option value="UCm5eucY4cn0qfAIIeLcd1SQ">Board Breakers 9th - 12th</option>
+                    <option value="UC_x5XG1OV2P6uZZ5FSM9Ttw">Google Developers</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="playlist">Playlist:</label>
+                <select id="playlist" name="playlist" required disabled>
+                    <option value="" disabled selected>Select a Channel First</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Faculty Name">Faculty Name:</label>
+                <input type="text" id="Faculty Name" name="Faculty Name" placeholder="Faculty Name">
+            </div>
+            <div class="form-group">
+                <label for="Subject">Subject:</label>
+                <input type="text" id="Subject" name="Subject" placeholder="Subject">
+            </div>
+            <div class="form-group">
+                <label for="Topic">Topic:</label>
+                <input type="text" id="Topic" name="Topic" placeholder="Topic">
+            </div>
+            <div class="form-group">
+                <label for="Exam Name">Exam Name:</label>
+                <input type="text" id="Exam Name" name="Exam Name" placeholder="Exam Name">
+            </div>
+            <div class="form-group">
+                <label for="Date">Date:</label>
+                <input type="date" id="Date" name="Date" required>
+            </div>
+            <div class="form-group">
+                <label for="Time">Time:</label>
+                <input type="text" id="Time" name="Time" placeholder="e.g., 4:00 PM">
             </div>
             <div class="form-group">
                 <label for="Visibility?">Visibility?</label>

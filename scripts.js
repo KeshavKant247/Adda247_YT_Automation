@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         const data = Object.fromEntries(formData.entries());
 
         // ⚠️ IMPORTANT: This is the URL for your MAIN n8n workflow that handles the live stream creation (a POST request).
-        const webhookUrl = 'https://keshavkant.app.n8n.cloud/webhook-test/31dc98d7-0876-40a9-8bda-a5753713963a';
+        const webhookUrl = 'https://keshavkant.app.n8n.cloud/webhook/31dc98d7-0876-40a9-8bda-a5753713963a';
 
         submitButton.disabled = true;
         submitButton.textContent = 'Scheduling...';
